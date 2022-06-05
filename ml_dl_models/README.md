@@ -65,7 +65,7 @@ DeepPavlov RuBERT:
 weighted avg       0.59      0.50      0.51       288
 ```
 
-Датасет для обучения алгоритмов сохранен c нашей предобработкой в файле `dataset.csv` (~1 гигабайт). Скачать его можно по ссылке: 
+Датасет для обучения алгоритмов сохранен c нашей предобработкой в файле `dataset.csv` (~1 гигабайт). Скачать его можно по ссылке: [https://dropmefiles.com/GuV8W](https://dropmefiles.com/GuV8W)
 
 
 Начать перетренировку можно с модели LSTM для предсказания 2 классов: [LSTM_Keras_2_digits.ipynb](LSTM_Keras_2_digits.ipynb)
