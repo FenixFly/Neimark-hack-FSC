@@ -19,3 +19,29 @@
 - **presentation.pdf** - сорержит презентацию
 
 Остальные файлы несут второстепенный смысл, но могут быть использованы как рабочие черновики.
+
+## Установка
+
+Должны быть установлены `git`, `docker`, `docker-compose`
+
+1. Скачать репозиторий 
+    ```
+    git clone https://github.com/FenixFly/Neimark-hack-FSC.git
+    ```
+1. Скачать веса обученных моделей по ссылке [https://dropmefiles.com/8BNqV](https://dropmefiles.com/8BNqV) и положить в папку *backend/models*
+
+1. Собрать обрать airflow
+    ```
+    cd airflow
+    sudo docker build -t  airflow2-docker:1.0.0 .
+    cd ..
+    ```
+3. Собрать и запустить образ системы
+    ```
+    sudo docker-compose up
+    ```
+4. Система запустится автоматически
+
+
+
+
