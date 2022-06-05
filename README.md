@@ -26,13 +26,13 @@
 1. Скачать репозиторий 
     ```
     git clone https://github.com/FenixFly/Neimark-hack-FSC.git
+    cd Neimark-hack-FSC
     ```
 1. Скачать веса обученных моделей по ссылке [https://dropmefiles.com/8BNqV](https://dropmefiles.com/8BNqV) и положить в папку *backend/models*
-1. Собрать airflow
+2. Скачать докер-образ airflow по ссылке [https://dropmefiles.com/KmyQa](https://dropmefiles.com/KmyQa) и положить в корневую папку репозитория 
+3. Установить airflow из загруженного докера
     ```
-    cd airflow
-    sudo docker build -t  airflow2-docker:1.0.0 .
-    cd ..
+    docker load < airflowdocker.tar
     ```
 3. Собрать и запустить образ системы
     ```
