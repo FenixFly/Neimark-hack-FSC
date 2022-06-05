@@ -29,8 +29,7 @@
     git clone https://github.com/FenixFly/Neimark-hack-FSC.git
     ```
 1. Скачать веса обученных моделей по ссылке [https://dropmefiles.com/8BNqV](https://dropmefiles.com/8BNqV) и положить в папку *backend/models*
-
-1. Собрать обрать airflow
+1. Собрать airflow
     ```
     cd airflow
     sudo docker build -t  airflow2-docker:1.0.0 .
