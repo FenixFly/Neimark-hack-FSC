@@ -1,8 +1,7 @@
-[![Python 3.9](https://img.shields.io/badge/Python-3.9-blue.svg)](#)
-
+[![Python 3.9](https://img.shields.io/badge/Python-3.9-blue.svg)](#) [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)]([[https://github.com/sindresorhus/awesome](https://github.com/FenixFly/Neimark-hack-FSC/)](https://github.com/FenixFly/Neimark-hack-FSC/))
 # Команда НЕЙМАРК
+## Сервис для автоматического определения кода товара ТН ВЭД ЕАЭС по предложенному описанию, с возможностью дообучения на поступающих данных.
 
-Сервис для автоматического определения кода товара ТН ВЭД ЕАЭС по предложенному описанию, с возможностью дообучения на поступающих данных.
 
 ## Структура
 
@@ -19,3 +18,28 @@
 - **presentation.pdf** - сорержит презентацию
 
 Остальные файлы несут второстепенный смысл, но могут быть использованы как рабочие черновики.
+
+## Установка
+
+Должны быть установлены `git`, `docker`, `docker-compose`
+
+1. Скачать репозиторий 
+    ```
+    git clone https://github.com/FenixFly/Neimark-hack-FSC.git
+    ```
+1. Скачать веса обученных моделей по ссылке [https://dropmefiles.com/8BNqV](https://dropmefiles.com/8BNqV) и положить в папку *backend/models*
+1. Собрать airflow
+    ```
+    cd airflow
+    sudo docker build -t  airflow2-docker:1.0.0 .
+    cd ..
+    ```
+3. Собрать и запустить образ системы
+    ```
+    sudo docker-compose up
+    ```
+4. Система запустится автоматически
+
+
+
+
